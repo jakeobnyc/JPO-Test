@@ -108,7 +108,7 @@ const released = [
     role: 'Assistant Sound Editor / Editing Room Assistant',
     type: 'Feature Film',
     description: 'Dir. Craig Johnson · Max',
-    poster: '/posters/the-parenting.jpeg',
+    poster: 'https://media.themoviedb.org/t/p/w500/5lMu14IMuHo0hKYCwCIogt7IioX.jpg',
     rt: 47,
   },
   {
