@@ -24,9 +24,8 @@ export default function Contact() {
       <div className={styles.inner}>
         <div className={styles.header}>
           <span className={styles.label}>Contact</span>
-          <h2 className={styles.heading}>Let's work together</h2>
           <p className={styles.sub}>
-            Available for features, episodic, and short form projects. Based in Brooklyn, NY.
+            Available for features, episodic, and shorts. Based in Brooklyn, NY.
           </p>
         </div>
         <ul className={styles.list}>
