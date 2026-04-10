@@ -24,7 +24,7 @@ export default function About() {
           </div>
           <div className={styles.photoWrap}>
             <img
-              src="/JPO-Test/jake-at-work.jpg"
+              src="/jake-at-work.jpg"
               alt="Jake O'Brien at work"
               className={styles.photo}
             />
