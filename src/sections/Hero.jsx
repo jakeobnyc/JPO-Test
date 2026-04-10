@@ -9,7 +9,7 @@ export default function Hero() {
       <div className={styles.content}>
         <p className={styles.eyebrow}>Sound Editor · MPEG</p>
         <h1 className={styles.name}>Jake P O'Brien</h1>
-        <p className={styles.role}>Dialogue Editor | Assistant Sound Editor</p>
+        <p className={styles.role}>Supervising Sound Editor | Dialogue Editor</p>
         <p className={styles.tagline}>
           Shaping performance and presence through sound — for film, television, and everything in between.
         </p>
