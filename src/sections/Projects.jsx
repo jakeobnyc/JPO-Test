@@ -120,6 +120,14 @@ const released = [
     poster: 'https://media.themoviedb.org/t/p/w500/yNPgjXeeb7vdNI7AQB5SWkkk6si.jpg',
     rt: 40,
   },
+  {
+    title: 'Light of the Setting Sun',
+    year: '2024',
+    role: 'Dialogue Editor',
+    type: 'Documentary',
+    description: 'Dir. Vicky Du · PBS Independent Lens',
+    poster: '/posters/setting-sun.jpg',
+  },
   // --- No poster, sorted by year (descending) ---
   {
     title: 'Lightning Bug',
@@ -134,13 +142,6 @@ const released = [
     role: 'Supervising Sound Editor / Re-Recording Mixer',
     type: 'Short Film',
     description: 'Dir. Gabriel Josephs',
-  },
-  {
-    title: 'Light of the Setting Sun',
-    year: '2024',
-    role: 'Dialogue Editor',
-    type: 'Short Film',
-    description: 'Dir. Vicky Du',
   },
   {
     title: 'The Gift',
