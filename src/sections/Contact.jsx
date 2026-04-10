@@ -12,6 +12,11 @@ const links = [
     display: 'imdb.com/name/nm14477749',
   },
   {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/jaketheirishman',
+    display: '@jaketheirishman',
+  },
+  {
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/jake-obrien-nyc/',
     display: 'linkedin.com/in/jake-obrien-nyc',
@@ -38,7 +43,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className={styles.link}
               >
-                {link.display} ↗
+                {link.display}
               </a>
             </li>
           ))}
