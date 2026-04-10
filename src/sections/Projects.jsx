@@ -8,6 +8,7 @@ const upcoming = [
     role: 'Dialogue Editor',
     type: 'Feature Film',
     description: 'Dir. Santiago Menghini',
+    imdb: 'https://www.imdb.com/title/tt37897207/',
   },
   {
     title: 'Furious',
@@ -15,6 +16,7 @@ const upcoming = [
     role: 'Assistant Sound Editor',
     type: 'TV Series',
     description: 'Dir. Liz Meriweather · Hulu',
+    imdb: 'https://www.imdb.com/title/tt36303968/',
   },
   {
     title: 'Matchbox',
@@ -22,6 +24,7 @@ const upcoming = [
     role: 'Dialogue Editor / Assistant Sound Editor',
     type: 'Feature Film',
     description: 'Dir. Sam Hargrave · Apple TV+',
+    imdb: 'https://www.imdb.com/title/tt28498219/',
   },
 ]
 
@@ -35,6 +38,7 @@ const released = [
     description: 'Showrunner Soo Hugh · Apple TV+',
     poster: 'https://media.themoviedb.org/t/p/w500/wUTXdmL6oNjhiStGveOaPeuFOYQ.jpg',
     rt: 100,
+    imdb: 'https://www.imdb.com/title/tt8888462/',
   },
   {
     title: 'Mr. Scorsese',
@@ -44,6 +48,7 @@ const released = [
     description: 'Dir. Rebecca Miller · Apple TV+',
     poster: 'https://media.themoviedb.org/t/p/w500/atok9lbfro3hZxGTlaJZWN0BWRM.jpg',
     rt: 98,
+    imdb: 'https://www.imdb.com/title/tt36998986/',
   },
   {
     title: 'Weapons',
@@ -53,6 +58,7 @@ const released = [
     description: 'Dir. Zach Cregger · Warner Bros.',
     poster: 'https://media.themoviedb.org/t/p/w500/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg',
     rt: 93,
+    imdb: 'https://www.imdb.com/title/tt26581740/',
   },
   {
     title: 'Ripley',
@@ -65,6 +71,7 @@ const released = [
     awards: [
       { type: 'emmy', text: 'Outstanding Sound Editing For A Limited Or Anthology Series, Movie Or Special' },
     ],
+    imdb: 'https://www.imdb.com/title/tt11016042/',
   },
   {
     title: 'Kiss of the Spider Woman',
@@ -74,6 +81,7 @@ const released = [
     description: 'Dir. Bill Condon',
     poster: 'https://media.themoviedb.org/t/p/w500/nLQcyl6XTu17CfT6g739PbsePDO.jpg',
     rt: 76,
+    imdb: 'https://www.imdb.com/title/tt30400277/',
   },
   {
     title: 'Franklin',
@@ -83,6 +91,7 @@ const released = [
     description: 'Dir. Tim Van Patten · Apple TV+',
     poster: 'https://media.themoviedb.org/t/p/w500/a9YV5QCdg95Zp02rKzkVxLxDtUC.jpg',
     rt: 71,
+    imdb: 'https://www.imdb.com/title/tt18351584/',
   },
   {
     title: 'Ezra',
@@ -92,6 +101,7 @@ const released = [
     description: 'Dir. Tony Goldwyn',
     poster: 'https://media.themoviedb.org/t/p/w500/uXSajviZLZhYUSNL41y1PJ9RisB.jpg',
     rt: 69,
+    imdb: 'https://www.imdb.com/title/tt20315818/',
   },
   {
     title: 'She Came to Me',
@@ -101,6 +111,7 @@ const released = [
     description: 'Dir. Rebecca Miller · Protagonist Pictures',
     poster: 'https://media.themoviedb.org/t/p/w500/2lG18RqCK8qTk7R5jA1L7ZRMWXu.jpg',
     rt: 48,
+    imdb: 'https://www.imdb.com/title/tt6689014/',
   },
   {
     title: 'The Parenting',
@@ -110,6 +121,7 @@ const released = [
     description: 'Dir. Craig Johnson · Max',
     poster: 'https://media.themoviedb.org/t/p/w500/5lMu14IMuHo0hKYCwCIogt7IioX.jpg',
     rt: 47,
+    imdb: 'https://www.imdb.com/title/tt14041896/',
   },
   {
     title: 'Best. Christmas. Ever!',
@@ -119,6 +131,7 @@ const released = [
     description: 'Dir. Mary Lambert · Netflix',
     poster: 'https://media.themoviedb.org/t/p/w500/yNPgjXeeb7vdNI7AQB5SWkkk6si.jpg',
     rt: 40,
+    imdb: 'https://www.imdb.com/title/tt7038762/',
   },
   {
     title: 'Light of the Setting Sun',
@@ -127,6 +140,7 @@ const released = [
     type: 'Documentary',
     description: 'Dir. Vicky Du · PBS Independent Lens',
     poster: '/posters/setting-sun.jpg',
+    imdb: 'https://www.imdb.com/title/tt31809838/',
   },
   // --- No poster, sorted by year (descending) ---
   {
@@ -160,8 +174,8 @@ const released = [
 ]
 
 function CreditCard({ credit }) {
-  return (
-    <div className={styles.card}>
+  const inner = (
+    <div className={styles.cardInner}>
       {credit.poster && (
         <div className={styles.posterWrap}>
           {/* Inner div clips the zoom effect without clipping the badge tooltip */}
@@ -192,6 +206,22 @@ function CreditCard({ credit }) {
       </div>
     </div>
   )
+
+  if (credit.imdb) {
+    return (
+      <a
+        href={credit.imdb}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.card}
+        aria-label={`View ${credit.title} on IMDb`}
+      >
+        {inner}
+      </a>
+    )
+  }
+
+  return <div className={styles.card}>{inner}</div>
 }
 
 export default function Projects() {

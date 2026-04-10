@@ -66,14 +66,23 @@
   border: 1px solid var(--border);
   border-radius: 6px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: border-color 0.2s, transform 0.2s;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
 }
 
 .card:hover {
-  border-color: rgba(161, 64, 221, 0.35);
+  border-color: var(--accent-2);
   transform: translateY(-3px);
+  box-shadow: 0 0 0 1px var(--accent-2), 0 8px 24px rgba(161, 64, 221, 0.15);
+  cursor: pointer;
+}
+
+.cardInner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 /* Poster image area — overflow:visible so badge tooltip isn't clipped */
