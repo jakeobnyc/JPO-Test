@@ -29,7 +29,16 @@ const upcoming = [
 ]
 
 const released = [
-  // --- With posters, sorted by Rotten Tomatoes score (descending) ---
+  {
+    title: 'Weapons',
+    year: '2024 – 2025',
+    role: 'Dialogue Editor',
+    type: 'Feature Film',
+    description: 'Dir. Zach Cregger · Warner Bros.',
+    poster: 'https://media.themoviedb.org/t/p/w500/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg',
+    rt: 93,
+    imdb: 'https://www.imdb.com/title/tt26581740/',
+  },
   {
     title: 'Pachinko',
     year: '2024',
@@ -49,16 +58,6 @@ const released = [
     poster: 'https://media.themoviedb.org/t/p/w500/atok9lbfro3hZxGTlaJZWN0BWRM.jpg',
     rt: 98,
     imdb: 'https://www.imdb.com/title/tt36998986/',
-  },
-  {
-    title: 'Weapons',
-    year: '2024 – 2025',
-    role: 'Dialogue Editor',
-    type: 'Feature Film',
-    description: 'Dir. Zach Cregger · Warner Bros.',
-    poster: 'https://media.themoviedb.org/t/p/w500/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg',
-    rt: 93,
-    imdb: 'https://www.imdb.com/title/tt26581740/',
   },
   {
     title: 'Ripley',
