@@ -31,7 +31,7 @@ const upcoming = [
 const released = [
   {
     title: 'Weapons',
-    year: '2024 – 2025',
+    year: '2025',
     role: 'Dialogue Editor',
     type: 'Feature Film',
     description: 'Dir. Zach Cregger · Warner Bros.',
@@ -61,7 +61,7 @@ const released = [
   },
   {
     title: 'Ripley',
-    year: '2023 – 2024',
+    year: '2024',
     role: 'Assistant Sound Editor',
     type: 'Limited Series',
     description: 'Dir. Steven Zaillian · Netflix',
@@ -74,7 +74,7 @@ const released = [
   },
   {
     title: 'Kiss of the Spider Woman',
-    year: '2024',
+    year: '2025',
     role: 'Dialogue Editor',
     type: 'Feature Film',
     description: 'Dir. Bill Condon',
