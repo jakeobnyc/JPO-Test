@@ -59,6 +59,16 @@
   color: var(--bg) !important;
 }
 
+.pwhl {
+  color: var(--accent-2) !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.pwhl:hover {
+  color: var(--text) !important;
+}
+
 .toolbox {
   padding: 0.35rem 0.85rem;
   border: 1px solid var(--accent-2);

@@ -3,11 +3,15 @@ import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Projects from './sections/Projects'
+import PWHLTeaser from './sections/PWHLTeaser'
 import Contact from './sections/Contact'
 import Toolbox from './sections/Toolbox'
+import PWHL from './sections/PWHL'
 
 function getPage() {
-  return window.location.hash === '#/toolbox' ? 'toolbox' : 'home'
+  if (window.location.hash === '#/toolbox') return 'toolbox'
+  if (window.location.hash === '#/pwhl') return 'pwhl'
+  return 'home'
 }
 
 export default function App() {
@@ -25,11 +29,14 @@ export default function App() {
       <main>
         {page === 'toolbox' ? (
           <Toolbox />
+        ) : page === 'pwhl' ? (
+          <PWHL />
         ) : (
           <>
             <Hero />
             <About />
             <Projects />
+            <PWHLTeaser />
             <Contact />
           </>
         )}
