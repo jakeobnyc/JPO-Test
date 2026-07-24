@@ -11,20 +11,18 @@ const upcoming = [
     imdb: 'https://www.imdb.com/title/tt37897207/',
   },
   {
-    title: 'Furious',
-    year: '2026',
-    role: 'Assistant Sound Editor',
-    type: 'TV Series',
-    description: 'Dir. Liz Meriweather · Hulu',
-    imdb: 'https://www.imdb.com/title/tt36303968/',
-  },
-  {
     title: 'Matchbox',
     year: '2026',
     role: 'Dialogue Editor / Assistant Sound Editor',
     type: 'Feature Film',
     description: 'Dir. Sam Hargrave · Apple TV+',
     imdb: 'https://www.imdb.com/title/tt28498219/',
+  },
+  {
+    title: 'Ruby',
+    role: 'Supervising Sound Editor',
+    type: 'Feature Film',
+    description: 'Dir. Max Bogen',
   },
 ]
 
@@ -38,6 +36,15 @@ const released = [
     poster: 'https://media.themoviedb.org/t/p/w500/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg',
     rt: 93,
     imdb: 'https://www.imdb.com/title/tt26581740/',
+  },
+  {
+    title: 'Furious',
+    year: '2026',
+    role: 'Assistant Sound Editor',
+    type: 'TV Series',
+    description: 'Dir. Liz Meriwether · Hulu',
+    poster: 'https://media.themoviedb.org/t/p/w500/qcTNUGkxpaFycXkItD3Jpn0Mcox.jpg',
+    imdb: 'https://www.imdb.com/title/tt36303968/',
   },
   {
     title: 'Pachinko',
