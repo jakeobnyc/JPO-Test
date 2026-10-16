@@ -16,6 +16,12 @@ const upcoming = [
     type: 'Feature Film',
     description: 'Dir. Max Bogen',
   },
+  {
+    title: "The 99'ers",
+    role: 'Dialogue Editor / Assistant Sound Editor',
+    type: 'Feature Film',
+    description: 'Dir. Nicole Kassell · Netflix',
+  },
 ]
 
 const released = [
